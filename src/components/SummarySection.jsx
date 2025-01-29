@@ -61,7 +61,7 @@ export default function SummarySection(props) {
                      <p>This is a <strong>carbon-neutral</strong> delivery</p>
                     </div>
                    
-                    <button className="confirm-btn" onClick={handleShow}>
+                    <button className="confirm-btn" onClick={handleShow} aria-controls='confirmation-modal'>
                      Confirm Order
                     </button>
                 

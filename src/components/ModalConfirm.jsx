@@ -26,9 +26,9 @@ export default function ModalConfirm(props) {
         })
     
     return (
-        <div className="modal-confirm">
+        <div className="modal-confirm" id='confirmation-modal' aria-modal="true" role='dialog' aria-labelledby='modal-title'>
             <img src={successIcon} alt="success icon" />
-            <h1 className='modal-h1'>Order Confirmed</h1>
+            <h1 className='modal-h1' id='modal-title'>Order Confirmed</h1>
             <p className='modal-p'>We hope you enjoy your food!</p>
             <div className="summary">
               {productSummaries}
