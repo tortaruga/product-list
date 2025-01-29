@@ -1,0 +1,131 @@
+.product-card {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.img-wrapper {
+    position: relative;
+    aspect-ratio: 1.7; 
+}
+
+picture {
+    border-radius: 1rem; 
+}
+
+.product-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: inherit; 
+} 
+
+.product-img.selected {
+    border: .15rem solid var(--red); 
+}
+
+.cart-icon {
+    width: 21px;
+    height: 20px;
+    background: url('/assets/images/icon-add-to-cart.svg') no-repeat;
+}
+
+.add-to-cart-btn:hover .cart-icon {
+    background: url('/assets/images/icon-add-to-cart-hover.svg') no-repeat;
+}
+
+.add-to-cart-btn, .select-quantity { 
+    position: absolute; 
+    bottom: -1rem; 
+    left: 50%;
+    transform: translateX(-50%);
+    padding: .8rem 2rem;
+    border-radius: 1.5rem;
+    border: .1rem solid var(--red); 
+    display: flex;
+    gap: .5rem;
+    background-color: white;
+    width: 12rem; 
+    justify-content: center;
+    align-items: center; 
+}
+
+.add-to-cart-btn:hover {
+    background-color: var(--red);
+    color: white;
+
+}
+
+.select-quantity {
+    justify-content: space-between; 
+    padding: .5rem;
+    background-color: var(--red);  
+    color: white;
+    font-weight: 600;
+}
+
+.select-quantity button {
+    background-color: transparent;
+    border: .1rem solid white;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.minus-icon, .plus-icon {
+    width: 10px;
+}
+
+.minus-icon {
+    background: url('/assets/images/icon-decrement-quantity.svg') no-repeat;
+    height: 2px;
+}
+
+.select-quantity button:hover {
+    background-color: white; 
+}
+
+.select-quantity button:hover .minus-icon {
+    background: url('/assets/images/icon-decrement-quantity-hover.svg') no-repeat;
+} 
+
+.plus-icon {
+    background: url('/assets/images/icon-increment-quantity.svg') no-repeat;
+    height: 10px;
+} 
+
+.select-quantity button:hover .plus-icon {
+    background: url('/assets/images/icon-increment-quantity-hover.svg') no-repeat;
+} 
+
+.info {
+    margin-top: 2rem; 
+}
+
+.info * {
+    margin-block: .5rem;
+}
+
+.product-name {
+    font-size: 1rem;    
+}
+
+.product-category {
+    color: var(--txt-light); 
+}
+
+.product-price {
+    color: var(--red);
+    font-weight: 600;
+ }
+
+@media screen and (min-width: 576px) {
+    .product-card {
+        max-width: 300px;  
+    } 
+
+    .img-wrapper {
+        aspect-ratio: 1;
+    }
+}

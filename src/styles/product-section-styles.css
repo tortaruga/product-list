@@ -1,0 +1,8 @@
+@media screen and (min-width: 576px) {
+    .product-cards-container {
+        display: flex; 
+        flex-wrap: wrap; 
+        justify-content: center ;
+        gap: 1.5rem; 
+    }
+}

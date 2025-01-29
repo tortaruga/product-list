@@ -1,0 +1,66 @@
+.modal-confirm {
+    background-color: white;
+    padding: 2rem; 
+    border-radius: .5rem .5rem 0 0;
+    position: fixed;
+    left: 0;
+    bottom: 0; 
+    width: 100%;
+    height: max-content;
+    color: var(--txt-dark);
+}
+
+.modal-h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0;
+}
+
+.modal-p {
+    margin-block: .3rem 3rem;
+    color:var(--txt-medium);
+}
+
+.summary {
+    background-color: hsla(14, 86%, 42%, 0.037); 
+    border-radius: .5rem;
+    padding: .5rem 1rem;
+}
+
+.total-product-price {
+    font-weight: 600;
+    color:var(--txt-medium);
+}
+
+.product-summary {
+    gap: 1rem;
+}
+
+.product-thumbnail {
+    border-radius: .5rem;
+    aspect-ratio: 1;
+    width: 50px;
+}
+
+.cart-total {
+    font-weight: 400;
+}
+
+.backdrop {
+    background-color: rgba(16, 16, 16, 0.318);
+    width: 100%;
+    height: 100%; 
+    position: fixed; 
+    top: 0;
+    left: 0;
+}
+
+@media screen and (min-width: 576px) {
+    .modal-confirm {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 550px;
+        border-radius: .5rem;
+    }    
+}

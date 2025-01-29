@@ -1,0 +1,119 @@
+.cart {
+    background-color: white; 
+    padding: 1.5rem;
+    border-radius: .5rem;
+    margin: 2rem .5rem auto;
+    width: 100%;
+} 
+
+.cart-title {
+    color: var(--red);
+    margin-top: 0;
+    font-size: 1.8rem; 
+}
+
+.empty-cart-img {
+    margin: 2rem auto 0rem;
+    display: block;
+}
+
+.empty-cart-p {
+    text-align: center;
+    color: var(--txt-medium);
+    font-weight: 600;
+}
+
+.product-summary {
+    border-bottom: .01rem solid hsl(15, 8%, 90%);
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-summary-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.remove-item {
+    border-radius: 50%;
+    border: .1rem solid var(--txt-light);
+    aspect-ratio: 1;
+    display: flex;
+    width: 24px;
+    align-items: center;
+    justify-content: center; 
+    background: url('/assets/images/icon-remove-item.svg') no-repeat;
+    background-position: center;
+    background-size: 10px;
+}
+
+.remove-item:hover {
+    border-color: var(--txt-medium);
+    background: url('/assets/images/icon-remove-item-hover.svg') no-repeat;
+    background-position: center;
+}
+
+.product-price-details {
+    display: flex;
+    gap: .8rem;
+    color: var(--txt-light);
+    font-weight: 600;
+}
+
+.cart-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-summary .product-quantity {
+    color: var(--red);
+    font-weight: 600;
+}
+
+.product-summary .product-price {
+    font-weight: 400; 
+    color: var(--txt-light);
+
+}
+
+.total-product-price {
+    color: var(--txt-medium);
+}
+
+.cabon-neutral-disclaimer {
+    display: flex;
+    background-color: var(--bg); 
+    border-radius: .5rem;
+    justify-content: center;
+    gap: .3rem;
+    align-items: center;
+    margin-top: 3rem;
+    text-align: center;
+    padding-inline: .3rem;
+}
+
+.cart-total {
+    font-weight: 600;
+}
+
+.cart-total span {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.confirm-btn, .modal-btn {
+    background-color: var(--red);
+    color: white;
+    padding: 1rem;
+    width: 100%;
+    border: none;
+    border-radius: 2rem;
+    margin-top: 3rem;
+}
+
+.confirm-btn:hover, .modal-btn:hover {
+    background-color: hsl(14, 83%, 34%);
+}

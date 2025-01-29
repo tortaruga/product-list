@@ -1,0 +1,42 @@
+:root {
+    --bg: hsl(20, 50%, 98%);
+    --txt-dark: hsl(14, 65%, 9%);
+    --red: hsl(14, 86%, 42%);
+    --green: hsl(159, 69%, 38%);
+    --txt-light: hsl(14, 25%, 72%);
+    --txt-medium: hsl(12, 20%, 44%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'red hat text', sans-serif; 
+    background-color: var(--bg); 
+    color: var(--txt-dark); 
+}
+
+button {
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 600; 
+    cursor: pointer;
+}
+
+main {
+    display: grid;
+    max-width: 1350px; 
+    margin: 2rem auto; 
+    padding-inline: .5rem;
+}
+
+.product-section .title {
+    font-size: 2.5rem;
+}
+
+@media screen and (min-width: 576px) {
+    main {
+        grid-template-columns: 1fr 350px; 
+    }
+}
