@@ -31,6 +31,10 @@ main {
     padding-inline: .5rem;
 }
 
+.product-section {
+    position: relative;
+}
+
 .product-section .title {
     font-size: 2.5rem;
 }
