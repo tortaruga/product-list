@@ -7,6 +7,8 @@
     bottom: 0;
     width: 100%;
     height: max-content;
+    overflow: auto;
+    max-height: 80vh; 
     color: var(--txt-dark);
 }
 

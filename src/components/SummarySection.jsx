@@ -8,7 +8,8 @@ import carbonNeutralIcon from '/assets/images/icon-carbon-neutral.svg';
 import '../styles/cart-styles.css';
 
 export default function SummarySection(props) {
-
+   const [showModal, setShowModal] = useState(false);
+    
    const totalProductsInCart = () => {
     return Object.values(props.productsAdded)
            .filter(value => value !== undefined && value !== null)
@@ -28,8 +29,6 @@ export default function SummarySection(props) {
         )
     })
 
-    const [showModal, setShowModal] = useState(false);
-    
     function handleShow() {
         setShowModal(true);
     }
@@ -38,7 +37,7 @@ export default function SummarySection(props) {
         setShowModal(false);
         props.reset();
     }
-    
+
     useEffect(() => {
         document.querySelector('body').style.overflow = showModal ? 'hidden' : 'auto'
     }, [showModal])
@@ -66,8 +65,10 @@ export default function SummarySection(props) {
                     </button>
                 
                     {showModal && <div className="backdrop"></div>}
+                    {showModal && (
                     <ModalConfirm handleClose={handleClose} showModal={showModal} productsAdded={props.productsAdded}/>
-                   
+                    )}
+                    
                </div>
                 ) : (
                     <div className="empty-cart">

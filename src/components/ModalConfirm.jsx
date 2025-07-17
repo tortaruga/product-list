@@ -2,14 +2,9 @@ import ProductSummary from './ProductSummary';
 import productData from  '../../data.json';
 import '../styles/modal-styles.css'
 import successIcon from '/assets/images/icon-order-confirmed.svg';
-
 import { calculateTotalPrice } from '../../utility-functions';
 
 export default function ModalConfirm(props) {
-    if (!props.showModal) {
-        return null;
-    }
-
     const productSummaries = Object.keys(props.productsAdded).map(productName => {
         const productPrice = productData.find(item => item.name === productName).price;
         const index = productData.map(e => e.name).indexOf(productName);

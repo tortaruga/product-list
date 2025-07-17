@@ -1,5 +1,3 @@
-import removeIcon from '/assets/images/icon-remove-item.svg';
-
 export default function ProductSummary(props) {
     return (
         <>
